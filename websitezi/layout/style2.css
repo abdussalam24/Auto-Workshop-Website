@@ -1,0 +1,299 @@
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #2b353f;
+        }
+
+        .top-bar {
+            background-color: #e8e8e8;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .top-bar a {
+            text-decoration: none;
+            color: #0073e6;
+            font-size: 14px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #343a40;
+            color: #f8f9fa;
+        }
+
+        .logo h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+        }
+
+        .nav-links li {
+            display: inline;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: white;
+            font-size: 16px;
+        }
+
+        .nav-links a:hover {
+            border-bottom: 2px solid #0073e6;
+            color: #0073e6;
+        }
+
+        .appointment-container {
+            text-align: center;
+            margin: 5% auto;
+            padding: 20px;
+            background: #fff;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 800px;
+        }
+
+        .steps {
+            display: flex;
+            justify-content: space-around;
+            margin-bottom: 20px;
+            flex-wrap: wrap;
+        }
+
+        .step {
+            flex: 1;
+            padding: 10px;
+            border-bottom: 2px solid #ccc;
+            cursor: pointer;
+            text-align: center;
+        }
+
+        .step.active {
+            border-bottom: 2px solid #0073e6;
+            color: #0073e6;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        select,
+        input[type="date"],
+        input[type="time"],
+        input[type="text"],
+        input[type="tel"],
+        input[type="email"] {
+            width: calc(100% - 20px);
+            padding: 10px;
+            margin: 5px 0 15px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+
+        button {
+            background-color: #0073e6;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #005bb5;
+        }
+
+        .step-content {
+            display: none;
+        }
+
+        .step-content.active {
+            display: block;
+        }
+
+        @media (max-width: 600px) {
+            .steps {
+                flex-direction: column;
+            }
+
+            .step {
+                text-align: left;
+            }
+
+            select,
+            input[type="date"],
+            input[type="time"],
+            input[type="text"],
+            input[type="tel"],
+            input[type="email"] {
+                width: 100%;
+            }
+        }
+
+        .footer-container {
+            background-color: #222;
+            color: #f8f9fa;
+            padding: 50px 20px;
+            margin-top: 10%;
+            font-family: 'Arial', sans-serif;
+        }
+
+        .footer-top {
+            display: flex;
+            justify-content: space-around;
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .footer-item {
+            flex: 1;
+            margin: 0 15px;
+        }
+
+        .footer-item i {
+            font-size: 40px;
+            margin-bottom: 10px;
+            color: #0073e6;
+        }
+
+        .footer-item h3 {
+            margin: 10px 0 5px 0;
+            font-size: 22px;
+            color: #f8f9fa;
+        }
+
+        .footer-item p {
+            font-size: 18px;
+            margin: 5px 0;
+        }
+
+        .footer-middle {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 30px;
+            flex-wrap: wrap;
+        }
+
+        .about,
+        .services,
+        .address {
+            flex: 1;
+            margin: 0 20px;
+            max-width: 300px;
+        }
+
+        .about p,
+        .address p {
+            margin: 10px 0;
+            line-height: 1.5;
+            color: #f8f9fa;
+        }
+
+        .services ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .services li {
+            margin: 5px 0;
+        }
+
+        .services a,
+        .address a,
+        .footer-item a {
+            text-decoration: none;
+            color: #0073e6;
+            transition: color 0.3s;
+        }
+
+        .services a:hover,
+        .address a:hover,
+        .footer-item a:hover {
+            color: #005bb5;
+        }
+
+        .footer-bottom {
+            background-color: #111;
+            color: #bbb;
+            padding: 20px 0;
+            text-align: center;
+            border-top: 1px solid #444;
+        }
+
+        .footer-bottom p {
+            margin: 0;
+            font-size: 16px;
+        }
+
+        .footer-bottom a {
+            color: #0073e6;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-bottom a:hover {
+            color: #005bb5;
+        }
+
+        .social-icons {
+            margin-top: 10px;
+        }
+
+        .social-icons a {
+            color: #bbb;
+            margin: 0 10px;
+            text-decoration: none;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-icons a:hover {
+            color: #f8f9fa;
+        }
+
+        @media (max-width: 768px) {
+
+            .footer-top,
+            .footer-middle {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .about,
+            .services,
+            .address {
+                margin: 20px 0;
+                max-width: 100%;
+                text-align: center;
+            }
+
+            .social-icons a {
+                margin: 5px;
+            }
+        }
+   
